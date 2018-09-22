@@ -12,6 +12,13 @@ const saltRounds = 12;
 const myPlaintextPassword = 'sUperpassw0rd!';
 const someOtherPlaintextPassword = 'pass123';
 
+// http://expressjs.com/en/starter/static-files.html
+app.use(express.static('public'));
+
+// http://expressjs.com/en/starter/basic-routing.html
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + '/views/index.html');
+});
 
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
@@ -25,7 +32,7 @@ const someOtherPlaintextPassword = 'pass123';
 
 //END_SYNC
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-
+const PORT = process.env.PORT || 3000;
+var listener = app.listen(PORT, () => {
+	console.log('Your app is listening on port ' + listener.address().port);
 });
