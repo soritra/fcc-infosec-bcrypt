@@ -1,0 +1,39 @@
+{
+	"//1": "describes your app and its dependencies",
+	"//2": "https://docs.npmjs.com/files/package.json",
+	"//3": "updating this file will download and update your packages",
+	"name": "FCC-Advanced-Node-and-Express",
+	"author": "raluds",
+	"version": "1.0.0",
+	"description": "FCC Challenge - Information security with bcrypt",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"bcrypt": "^3.0.1",
+		"body-parser": "^1.16.0",
+		"cors": "^2.8.1",
+		"dotenv": "^6.0.0",
+		"express": "^4.14.1",
+		"helmet": "^3.13.0",
+		"mongodb": "^2.2.22"
+	},
+	"engines": {
+		"node": "8.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/soritra/fcc-infosec-bcrypt"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"information",
+		"security",
+		"bcryt",
+		"helmet",
+		"freecodecamp"
+	],
+	"license": ""
+}
